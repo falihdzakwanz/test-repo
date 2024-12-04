@@ -28,8 +28,5 @@
         "DB_DATABASE": "test-db",
         "DB_USERNAME": "root",
         "DB_PASSWORD": ""
-    },
-    "build": {
-        "command": "composer install && npm install && npm run build && php artisan migrate --force"
     }
 }
