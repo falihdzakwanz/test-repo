@@ -1,8 +1,8 @@
 {
     "version": 2,
     "functions": {
-        "api/index.php": { 
-            "runtime": "vercel-php@0.7.3" 
+        "api/index.php": {
+            "runtime": "vercel-php@0.7.3"
         }
     },
     "routes": [
@@ -25,5 +25,14 @@
         "LOG_CHANNEL": "stderr",
         "SESSION_DRIVER": "cookie"
     },
+    "builds": [
+        {
+            "src": "api/index.php",
+            "use": "@vercel/php",
+            "config": {
+                "buildCommand": "apt-get update && apt-get install -y openssl libssl-dev"
+            }
+        }
+    ],
     "outputDirectory": "public"
 }
