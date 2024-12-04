@@ -3,8 +3,7 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "build": "react-scripts build",
-        "postinstall": "composer install && php artisan migrate --force"
+        "build": "react-scripts build"
     },
     "devDependencies": {
         "axios": "^1.6.4",
